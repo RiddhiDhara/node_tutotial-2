@@ -1,1 +1,118 @@
 This tutorial is from Sangram Mukherjee from youtube 
+
+Node.js has a variety of commands that can be used to interact with the runtime, manage dependencies, and develop applications. Below is a categorized list of commonly used Node.js commands:
+
+---
+
+### **1. Node.js Execution Commands**
+| Command | Description |
+|---------|-------------|
+| `node <file>.js` | Run a Node.js script. |
+| `node` | Start Node.js REPL (Read-Eval-Print Loop) interactive shell. |
+| `node -v` or `node --version` | Check installed Node.js version. |
+| `node -e "console.log('Hello, World!')"` | Execute a single command in the shell. |
+| `node --inspect <file>.js` | Run a script with debugging enabled. |
+| `node --trace-warnings <file>.js` | Display detailed warnings for the script. |
+| `node --experimental-modules <file>.js` | Enable ECMAScript (ES) module support. |
+| `node --prof <file>.js` | Run a script with V8 profiler. |
+
+---
+
+### **2. Package Management (npm & npx)**
+| Command | Description |
+|---------|-------------|
+| `npm init` | Create a new `package.json` file interactively. |
+| `npm init -y` | Create a default `package.json` without prompts. |
+| `npm install <package>` or `npm i <package>` | Install a package locally. |
+| `npm install -g <package>` | Install a package globally. |
+| `npm uninstall <package>` | Remove a package from the project. |
+| `npm update` | Update all dependencies. |
+| `npm list` | Show installed packages. |
+| `npm cache clean --force` | Clear npm cache. |
+| `npm run <script>` | Execute a script from `package.json`. |
+| `npx <command>` | Execute a package without installing it globally. |
+
+---
+
+### **3. Node.js Module Commands**
+| Command | Description |
+|---------|-------------|
+| `require('module')` | Import a module (CommonJS). |
+| `import module from 'module'` | Import a module (ESM). |
+| `module.exports = {...}` | Export modules in CommonJS. |
+| `export default {...}` | Export modules in ESM. |
+
+---
+
+### **4. Debugging & Performance Monitoring**
+| Command | Description |
+|---------|-------------|
+| `node --inspect-brk <file>.js` | Start debugging and break before executing code. |
+| `node --inspect --inspect-port=9229 <file>.js` | Set a custom debugging port. |
+| `node --prof <file>.js` | Profile the script's execution. |
+| `node --trace-deprecation <file>.js` | Show deprecation warnings. |
+
+---
+
+### **5. REPL Commands (Node Interactive Shell)**
+| Command | Description |
+|---------|-------------|
+| `.help` | Show available REPL commands. |
+| `.exit` or `Ctrl + D` | Exit the REPL session. |
+| `.load <file>.js` | Load a JavaScript file into REPL. |
+| `.save <file>.js` | Save the current REPL session to a file. |
+| `.clear` | Clear REPL's current context. |
+
+---
+
+### **6. Environment Variable Commands**
+| Command | Description |
+|---------|-------------|
+| `NODE_ENV=production node <file>.js` | Set environment variable before running the script (Linux/macOS). |
+| `set NODE_ENV=production && node <file>.js` | Set environment variable (Windows). |
+
+---
+
+### **7. Package Management (Yarn Alternative to npm)**
+| Command | Description |
+|---------|-------------|
+| `yarn init` | Initialize a new project. |
+| `yarn add <package>` | Install a package. |
+| `yarn remove <package>` | Remove a package. |
+| `yarn run <script>` | Run a script from `package.json`. |
+
+---
+
+### **8. File and Directory Commands**
+| Command | Description |
+|---------|-------------|
+| `fs.readFile()` | Read a file asynchronously. |
+| `fs.writeFile()` | Write data to a file. |
+| `fs.appendFile()` | Append data to a file. |
+| `fs.unlink()` | Delete a file. |
+| `fs.mkdir()` | Create a new directory. |
+| `fs.rmdir()` | Remove a directory. |
+
+---
+
+### **9. Process Management Commands**
+| Command | Description |
+|---------|-------------|
+| `process.exit()` | Exit the current process. |
+| `process.cwd()` | Get the current working directory. |
+| `process.env` | Access environment variables. |
+| `process.argv` | Get command-line arguments. |
+| `process.memoryUsage()` | Check memory usage. |
+
+---
+
+### **10. HTTP Server Commands**
+| Command | Description |
+|---------|-------------|
+| `http.createServer()` | Create a basic HTTP server. |
+| `server.listen(port)` | Start the server on a specified port. |
+| `server.close()` | Stop the server. |
+
+---
+
+Let me know if you need further details or explanations on any specific commands!
