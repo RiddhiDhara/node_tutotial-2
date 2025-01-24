@@ -18,7 +18,6 @@ notes :
 -> path.sep	- Provides the platform-specific path separator (/ for Linux/macOS, \ for Windows).	 
 -> path.delimiter - Provides the path delimiter used in environment variables.	
 
-
 -> fs.readFile(path, encoding, callback) - Reads the content of a file asynchronously.	
 -> fs.readFileSync(path, encoding) - Reads the content of a file synchronously.	
 -> fs.writeFile(path, data, callback) - Writes data to a file asynchronously.	
@@ -36,3 +35,9 @@ notes :
 -> fs.rmdirSync(path) - Removes a directory synchronously.	
 -> fs.readdir(path, callback) - Reads contents of a directory asynchronously.	
 -> fs.readdirSync(path) - Reads contents of a directory synchronously.	
+
+-> http.createServer(callback) - Creates an HTTP server to handle incoming requests and responses asynchronously.
+-> req.url - Retrieves the URL of the incoming HTTP request.
+-> res.writeHead(statusCode, headers) - Sends a response header with the specified status code and headers.
+-> res.end(data) - Ends the response and sends the provided data to the client.
+-> server.listen(port, callback) - Starts the server and listens for incoming connections on the specified port.
